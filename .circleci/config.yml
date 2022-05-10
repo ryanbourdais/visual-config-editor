@@ -6,7 +6,7 @@ jobs:
   deploy-page:
     executor: 
       name: node/default
-      tag: 14.15.0
+      tag: 12.13.0
     steps:
       - checkout
       - add_ssh_keys:
