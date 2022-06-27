@@ -1,22 +1,8 @@
-import React from 'react';
 import { EdgeProps, isNode } from 'react-flow-renderer';
-import DeleteItemIcon from '../../icons/ui/DeleteItemIcon';
-import {
-  getBezierPath,
-  getEdgeCenter,
-  getMarkerEnd,
-} from 'react-flow-renderer';
-import { useStoreActions, useStoreState } from '../../state/Hooks';
+import { useStoreState } from '../../state/Hooks';
 
-import ReactFlow, {
-  removeElements,
-  addEdge,
-  Background,
-} from 'react-flow-renderer';
+import { Job, types, workflow } from '@circleci/circleci-config-sdk';
 import { WorkflowModel } from '../../state/Store';
-import ElementProps from '../containers/WorkflowContainer';
-import { WorkflowJobParameters } from '@circleci/circleci-config-sdk/dist/src/lib/Components/Workflow/types/WorkflowJob.types';
-import { workflow, Job, types } from '@circleci/circleci-config-sdk';
 
 const foreignObjectSize = 40;
 
@@ -111,7 +97,7 @@ export default function Edge({
           <button
             className="edgebutton"
             onClick={(event) => {
-              console.log(id.length);
+              console.log('n/a');
             }}
           >
             ×
